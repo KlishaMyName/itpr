@@ -1,68 +1,96 @@
-a {
-
+.menu-item a {
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 
 body {
-    max-width: 1062px;
-    width: 100%;
-    margin: auto;
+
+    max-width: 100%;
     background: url('img/background.jpg') no-repeat center;
-    background-size: 100%;
-    height: 100vh;
+    background-size: cover;
+    height: 100wh;
     color: #fff;
+    background-color: black;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
-    margin-top: 24px;
-    margin-bottom: 200px;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 
 .menu-list {
-    -webkit-text-stroke: 3px black;
+    margin-right: 5%;
     display: flex;
     list-style-type: none;
 }
-
-.menu-list :not(:last-child){
-    margin-right: 63px;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: white;
-}
-
-.active{
-    font-weight: bold;
+.menu-item:not(:last-child){
+    margin-right: 30%;
 }
 
 .main-text {
     font-weight: 500;
-    font-size: 53px;
-    line-height: 62px;
+    text-align: center;
 }
 
-.quote {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    margin-left: 0;
-    opacity: 0.7;
+@media screen and (max-width: 768px) {
+    .menu-item{
+        width 10%;
+        max-width: 10%;
+        margin: auto auto;
+    }
 }
 
-.button-order {
-    all: unset;
-    padding: 22px 55px;
-    background: #f6762c;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+@media screen and (max-width: 480px) {
+ .menu-item {
+   width: 15%;
+ }
 }
 
 .main {
-    max-width: 500px;
+    width: 90%;
+
+}
+
+.info {
+    margin-right: 30%;
+    font-size: 800;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    margin-left: 20%;
+    position: relative;
+}
+
+.button-read-more {
+    all: unset;
+    padding: 22px 55px;
+    background-color: darkblue;
+    line-height: 100%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+    transition: all 0.8s ease 0s;
+}
+.button-read-more:hover {
+    background-color: darkslateblue;
+}
+
+.logo {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.photo-pc {
+    float: left;
+    margin-left: 20%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding-right: 5%;
 }
